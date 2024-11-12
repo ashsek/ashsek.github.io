@@ -1,0 +1,52 @@
+<!doctype html><html lang="en">
+<!-- Mirrored from sonnet.io/posts/reactive-hole/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Nov 2024 20:29:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8"><meta content="width=device-width,initial-scale=1" name="viewport"><meta name="theme-color" content="#fff4f4"><link href="../../css/styles.css" rel="stylesheet"><link href="https://fonts.gstatic.com/" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"><link type="application/atom+xml" rel="alternate" href="../../feed.xml" title="Rafał Pastuszak"><meta property="og:description" content="Rafał Pastuszak is an experienced startup consultant specialised in web, mobile, emerging technologies and human-centred design. Click to find out more.
+"><meta property="og:title" content="Reactive Hole · Rafał Pastuszak"><meta property="og:site_name" content="sonnet.io"><meta property="og:url" content="index.html"><meta property="og:image" content="../../images/reactive-hole/hero-social.png"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@rafalpast"><meta name="twitter:creator" content="@rafalpast"><meta name="twitter:title" content="Reactive Hole · Rafał Pastuszak"><meta name="twitter:description" content="Rafał Pastuszak is an experienced startup consultant specialised in web, mobile, emerging technologies and human-centred design. Click to find out more.
+"><meta name="twitter:image" content="../../images/reactive-hole/hero-social.png"><title>Reactive Hole · Rafał Pastuszak</title><meta name="description" content="Rafał Pastuszak is an experienced startup consultant specialised in web, mobile, emerging technologies and human-centred design. Click to find out more.
+"><link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../../images/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../images/favicons/favicon-16x16.png"><link rel="manifest" href="../../images/favicons/site.webmanifest"><meta name="msapplication-config" content="../../images/favicons/browserconfig.xml"><meta name="msapplication-TileColor" content="#ffffff"><meta name="theme-color" content="#ffffff"><script>document.addEventListener("DOMContentLoaded", () => {
+        const remoteLinks = document.querySelectorAll('a[href^="//"], a[href^="http"]');
+
+        [...remoteLinks].forEach((anchor) => {
+          anchor.target = "_blank";
+        });
+      });</script></head><body><main class="wrapper"><header class="blog-header" id="blog-header"><a href="../../index.html" class="blog-header__logo"></a><nav><a href="../../index.html" class="blog-header__logo"></a><ul id="menu" aria-labelledby="show-menu-button"><li><a href="../../blog">Writing</a></li><li><a href="../../projects">Projects</a></li><li><a href="https://untested.sonnet.io/">Notes</a></li><li><a href="https://consulting.sonnet.io/">Work with me</a></li><li><a href="../hi">Say&nbsp;hi</a></li></ul><button class="hide-menu" onclick='document.dispatchEvent(new CustomEvent("menu:close"))' arial-label="close menu"></button></nav><button class="show-menu" id="show-menu-button" arial-label="show menu" aria-expanded="false" onclick='document.dispatchEvent(new CustomEvent("menu:open"))'>menu</button></header><script type="module">[...document.querySelectorAll('#menu a')]
+    .forEach( el => {
+      el.addEventListener('click', () =>{
+        if(el.getAttribute('href').startsWith('http')) {
+          document.dispatchEvent(new CustomEvent('menu:close'))
+        }
+      })
+    } 
+  )
+
+  document.addEventListener('menu:close', () => {
+    document
+      .querySelector('#blog-header')
+      .classList
+      .remove('is-visible');
+
+    document.querySelector('#show-menu-button').setAttribute('aria-expanded', 'false')
+
+  })
+
+  document.addEventListener('menu:open', () => {
+    document
+      .querySelector('#blog-header')
+      .classList
+      .add('is-visible')
+
+      document.querySelector('#show-menu-button').setAttribute('aria-expanded', 'true')
+  })</script><div class="container container--full"><article class="post"><header class="post__header"><picture><source type="image/avif" srcset="/images/opt/zNOxk4QNNj-600.avif 600w, /images/opt/zNOxk4QNNj-1200.avif 1200w" sizes="(min-width: 1200px) 60rem, 100vw"><source type="image/webp" srcset="/images/opt/zNOxk4QNNj-600.webp 600w, /images/opt/zNOxk4QNNj-1200.webp 1200w" sizes="(min-width: 1200px) 60rem, 100vw"><source type="image/jpeg" srcset="/images/opt/zNOxk4QNNj-600.jpeg 600w, /images/opt/zNOxk4QNNj-1200.jpeg 1200w" sizes="(min-width: 1200px) 60rem, 100vw"><img alt="Reactive Hole" loading="lazy" decoding="async" src="../../images/opt/zNOxk4QNNj-600.jpeg" width="1200" height="679"></picture><time class="post__time" datetime="Mon Mar 01 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">Mar 1, 2021</time><h1 class="post__title">Reactive Hole</h1></header><div class="post__content"><p>In the past few weeks I've been messing with turning some of my doodles into little apps.</p><p>Here's a (fairly) private and (mostly) secure P2P transfer thingy:</p><p><video src="../../images/reactive-hole/bird_sfw.mp4" muted autoplay loop controls></video></p><p>You can check it out <a href="https://reactive-hole.vercel.app/bls4w4tcd9f00000" target="_blank" rel="noopener">here</a>, and here (<a href="https://github.com/paprikka/reactive-hole" target="_blank" rel="noopener">source</a>).</p><p>What are the other tools/digital products that are so simple, so low-tech that we'd choose them over the alternatives purely because of their aesthetics or how they make us feel?</p><p>I'm not talking about anything more complex than the digital version of a coffee mug or a keychain. Neither serves an important purpose and both are anything but irreplaceable. I don't care whether the thing in front of me is pretty or ugly, playful or boring. What I care about is whether it feels mine.</p><p>This might sound like I'm procrastinating (likely) or talking about the experience economy (also, likely). But, what I really have in mind are toys.</p><p>Now, if you were to build a toy (not a <a href="https://apps.apple.com/gb/app/tommy-the-toe/id1498417487" target="_blank" rel="noopener" title="Ugh, especially not one that starts as a 1 day project and ends up taking 3 months">game</a> and not a tool), <a href="../hi">what would that be</a>?</p></div></article><aside class="sharing">Did you enjoy the article? Then **subscribe to my mailing list** to receive more content like this:<div class="sharing__email"><script async data-uid="af1fc0f370" src="https://rafal.ck.page/af1fc0f370/index.js"></script></div>You can also <a href="https://rafal.ck.page/products/tip">buy me a coffee</a>, <a href="../../feed.xml">subscribe via RSS</a>, or <a href="../hi">say&nbsp;hi</a>.</aside><nav class="post__nav"><a href="../../blog">Go back to all posts</a></nav></div></main><script async defer="defer" data-domains="www.sonnet.io,sonnet.io" data-website-id="fbde7cb0-26f1-44d4-ba49-2423c13314a6" src="https://sonnet-events.vercel.app/umami.js"></script><script>document.addEventListener('click', function(event) {
+            let target = event.target;
+            while (target && target !== document) {
+                if (target.hasAttribute('data-sonnet-event')) {
+                    const eventName = target.getAttribute('data-sonnet-event');
+                    umami.trackEvent(eventName);
+                    break;
+                }
+                target = target.parentElement;
+            }
+        });</script><script>__sonnet_build_time="Fri Jun 14 2024 10:28:17 GMT+0000 (Coordinated Universal Time)"</script><a rel="me" hidden href="https://mastodon.cloud/@raf">Mastodon</a></body>
+<!-- Mirrored from sonnet.io/posts/reactive-hole/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Nov 2024 20:29:51 GMT -->
+</html>
