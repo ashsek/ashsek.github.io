@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="2; url=https://docs.google.com/forms/d/e/1FAIpQLSdKqWr-u9vGnLbHlQqYN92ObjrSxFibqb0d8X9jjo9vqKteug/viewform?usp=header" />
+  <title>Redirecting...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f59754, #00f2fe);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .spinner {
+      margin: 20px auto;
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Redirecting You...</h1>
+    <div class="spinner"></div>
+    <p>If you're not redirected automatically,<br>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKqWr-u9vGnLbHlQqYN92ObjrSxFibqb0d8X9jjo9vqKteug/viewform?usp=header">Click here</a>.</p>
+  </div>
+</body>
+</html>
